@@ -111,6 +111,11 @@
 #define STM32_PLLN_VALUE                    432
 #define STM32_PLLP_VALUE                    2
 #define STM32_PLLQ_VALUE                    9
+#elif STM32_HSECLK == 25000000U
+#define STM32_PLLM_VALUE                    25
+#define STM32_PLLN_VALUE                    432
+#define STM32_PLLP_VALUE                    2
+#define STM32_PLLQ_VALUE                    9
 #else
 #error "Unsupported F7 HSE clock"
 #endif
